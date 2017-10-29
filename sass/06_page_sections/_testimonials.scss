@@ -1,0 +1,48 @@
+/* --------- 6.3 Testimonials ---------- */
+
+.testimonial {
+    padding: 15px;
+}
+
+blockquote {
+    position: relative;
+}
+
+.testimonial img {
+    max-height: 120px;
+    border-radius: 250em;
+}
+
+.testimonial footer {
+    padding-top: 12px;
+}
+
+/* Style Classic - Avatar above Testimonial */
+
+.testimonial.classic img {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.testimonial.classic q {
+    display: block;
+}
+
+.testimonial.classic footer:before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    margin: 10px auto 15px auto;
+}
+
+/* Style Big */
+
+.testimonial.bigtest {
+    padding-top: 0;
+}
+
+.testimonial.bigtest q {
+    font-size: 22px;
+}
+

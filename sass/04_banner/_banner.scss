@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------------------------------*/
+/* 4. Banner */
+/*------------------------------------------------------------------------------------------*/
+
+#banner {
+    background-size: cover;
+}
+
+#banner-content.row {
+    padding-top: 170px;
+    padding-bottom: 140px;
+}
+
+#banner h1 {
+    padding-top: 5%;
+}
+
+#banner .section-heading:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-top: 30px;
+}
+

@@ -1,0 +1,30 @@
+/* --------- 5.3 Divider ---------- */
+
+.divider {
+    position: relative;
+    width: 40%;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px auto 5px auto;
+    clear: both;
+    text-align: center;
+}
+
+.divider-inner {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    margin-top: -1px;
+    border-top: 1px solid;
+    border-color: #e1e1e1;
+}
+
+.divider i {
+    background: #fff;
+    position: relative;
+    top: -11px;
+    padding: 0 5px 0 5px;
+    color: #e1e1e1;
+}
+

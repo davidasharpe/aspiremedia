@@ -1,0 +1,82 @@
+/* Namari Landing Page v.1.1.0 Style Index - a free landing page by shapingrain.com
+
+1. Default and Reset styles
+- 1.1 Input Elements
+2. Global elements
+- 2.1 Header
+- 2.2 Logo
+- 2.3 Buttons
+- 2.4 Navigation
+- 2.5 Social Elements
+- 2.6 Images
+3. Fonts and Headings
+4. Banner
+- 4.1 SignUp Form
+5. Content Elements
+- 5.1 Icons
+- 5.2 Parallax Elements
+- 5.3 Divider
+6. Landing Page Sections
+- 6.1 Features
+- 6.2 Testimonials
+- 6.3 Gallery
+- 6.4 Video
+- 6.5 Clients
+- 6.6 Pricing Table
+7. Footer
+
+*/
+
+@import '01_defaults/defaults.scss';
+
+@import '01_defaults/input_elements.scss';
+
+@import '02_layout_elements/layout.scss';
+
+@import '02_layout_elements/header.scss';
+
+@import '02_layout_elements/logo.scss';
+
+@import '02_layout_elements/buttons.scss';
+
+@import '02_layout_elements/navigation.scss';
+
+@import '02_layout_elements/social_elements.scss';
+
+@import '02_layout_elements/images.scss';
+
+@import '03_fonts_headings/fonts_headings.scss';
+
+@import '04_banner/banner.scss';
+
+@import '04_banner/banner_video.scss';
+
+@import '05_content_elements/icons.scss';
+
+@import '05_content_elements/parallax_elements.scss';
+
+@import '05_content_elements/divider.scss';
+
+@import '06_page_sections/introduction.scss';
+
+@import '06_page_sections/features.scss';
+
+@import '06_page_sections/testimonials.scss';
+
+@import '06_page_sections/gallery.scss';
+
+@import '06_page_sections/video.scss';
+
+@import '06_page_sections/clients.scss';
+
+@import '06_page_sections/pricing_table.scss';
+
+@import '07_footer/footer.scss';
+
+@import '07_footer/preloader.scss';
+
+@import '07_footer/responsive_elements.scss';
+
+
+
+

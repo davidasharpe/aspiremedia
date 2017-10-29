@@ -1,0 +1,115 @@
+/*------------------------------------------------------------------------------------------*/
+/* 1. Defaults & Reset of specific styles across browsers */
+/*------------------------------------------------------------------------------------------*/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: 25px;
+}
+
+.row img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    line-height: inherit;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+iframe {
+    border: 0 !important;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+figure {
+    margin: 0;
+}
+
+/* Page Border */
+
+.page-border {
+    position: fixed;
+    z-index: 999999;
+    pointer-events: none;
+}
+
+.page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
+    background: #f3f3ef;
+    position: fixed;
+    z-index: 9999;
+}
+
+.page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
+    padding: 11px;
+    background: #ccc;
+}
+
+.page-border .bottom-border, .page-border .top-border {
+    width: 100%;
+    padding: 10px;
+    left: 0;
+}
+
+.page-border .left-border, .page-border .right-border {
+    padding: 10px;
+    height: 100%;
+    top: 0;
+}
+
+.page-border .top-border {
+    top: 0;
+}
+
+.page-border .right-border {
+    right: 0;
+}
+
+.page-border .bottom-border {
+    bottom: 0;
+}
+
+.page-border .left-border {
+    left: 0;
+}
+
+#wrapper {
+    margin:0;
+    padding: 0;
+    position: relative;
+}
+
+main{
+  background: #fff;
+}
+
+footer{
+  background: #fff;
+  margin-bottom: 0;
+}

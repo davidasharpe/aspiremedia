@@ -1,0 +1,18 @@
+/* --------- 2.1 Header --------- */
+
+#header {
+    height: 71px !important;
+    overflow: visible;
+    z-index: 9999;
+    width: 100%;
+    position: absolute !important;
+}
+
+#header .row {
+    padding: 0;
+}
+
+#header aside {
+    text-align: right;
+}
+
