@@ -38,46 +38,47 @@ jsSources = [
 ];
 
 sassSources = ['components/sass/style.scss'];
-htmlSources = ['*.html'];
+htmlSources = [outputDir + '*.html'];
 
 gulp.task('js', function(){
     gulp.src(jsSources)
     .pipe(concat('script.js'))
     .pipe(gulp.dest(outputDir + 'js'))
-    .pipe(connect.reload())
+    .pipe(connect.reload());
 });
 
 gulp.task('compass', function() {
     gulp.src(sassSources)
-    .pipe(compass({
+      .pipe(compass({
         sass: 'components/sass',
         image: outputDir + 'images',
         style: sassStyle
-    })
-    .on('error', gutil.log))
-    .pipe(gulp.dest(outputDir + 'css'))
-    .pipe(connect.reload())
-});
+      })
+      .on('error', gutil.log))
+      .pipe(gulp.dest(outputDir + 'css'))
+      .pipe(connect.reload())
+  });
 
-gulp.task('watch', function() {
+  gulp.task('watch', function() {
     gulp.watch(jsSources, ['js']);
-    gulp.watch('components/sass/*.scss' ['compass']);
-    gulp.watch('*.html' ['html']);
-});
+    gulp.watch('components/sass/**/*.scss', ['compass']);
+    gulp.watch('*.html', ['html']);
+  });
 
-gulp.task('connect', function() {
+  gulp.task('connect', function() {
     connect.server({
-        root: outputDir,
-        livereload: true
+      root: outputDir,
+      livereload: true
     });
-});
+  });
 
 gulp.task('html', function() {
     gulp.src('*.html')
-    .pipe(connect.reload())
+    .pipe(connect.reload());
 });
 
 gulp.task('default', ['html', 'js', 'compass', 'connect', 'watch']);
+
 
 
 

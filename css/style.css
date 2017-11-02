@@ -2719,6 +2719,10 @@ h6 {
   height: auto;
 }
 
+.col-text {
+  text-align: left;
+}
+
 .row {
   max-width: 1245px;
   margin: 0 auto;
@@ -2782,7 +2786,7 @@ h3 {
 }
 
 #pricing h2 {
-  text-align: left;
+  text-align: right;
 }
 
 .price {
